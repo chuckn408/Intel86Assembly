@@ -1,0 +1,14 @@
+function epilogs and prlog template::::::
+
+my_function:
+  push rbp
+  mov rbp, rsp
+
+  sub rsp, N
+
+  [...]
+
+
+  add rsp, N
+  pop rbp
+  ret

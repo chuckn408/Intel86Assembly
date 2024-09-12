@@ -1,0 +1,8 @@
+Changing mov rdi, 0 to mov rdi, 8 will now result in:  8 as output
+
+
+anothe rway to observe system calls is by using strace:::
+$ strace ./main
+execve("./main", ["./main"], 0x7ffc60e6bf10 /* 60 vars */) = 0
+exit(8)                                 = ?
++++ exited with 8 +++
